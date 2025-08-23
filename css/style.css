@@ -200,7 +200,6 @@ footer p {
   flex-wrap: wrap;
   margin: auto;
   justify-content: center;
-  width: 90%;
 }
 
 .testimony p {
@@ -365,6 +364,7 @@ h3 {
 
 @media (min-width: 890px) {
   .container03 > .testimony {
+    width: 90%;
     justify-items: center;
     align-items: center;
     text-align: left;

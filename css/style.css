@@ -49,6 +49,7 @@ nav small {
 
 img,
 video {
+  border-radius: 8px;
   width: 100%;
   max-width: 768px;
 }
@@ -193,6 +194,7 @@ footer p {
 .container03 > .testimony > img {
   width: 280px;
   margin: 20px;
+  border-radius: 20px 0px;
 }
 
 .testimony {
@@ -212,6 +214,11 @@ footer p {
   padding-right: 15px;
   text-align: left;
 }
+
+.container04 img {
+ max-width: 600px; 
+}
+
 
 .container04 .videoImi {
   display: none;
@@ -450,7 +457,6 @@ h3 {
   .container04 img {
     float: left;
     margin-right: 20px;
-    width: 600px;
   }
 
   .container04 .videoImi {

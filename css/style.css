@@ -177,8 +177,12 @@ footer p {
   width: 100%;
 }
 
-.container03 {
-  margin: 0px 3%;
+.container03 img {
+  max-width: 600px;
+}
+
+.container03 h1 {
+  text-align: center;
 }
 
 .container03 a {
@@ -186,8 +190,22 @@ footer p {
   font-weight: bold;
 }
 
-.container03 > #testimony > img {
-  width: 300px;
+.container03 > .testimony > img {
+  width: 280px;
+  margin: 20px;
+}
+
+.testimony {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
+  width: 90%;
+}
+
+.testimony p {
+ flex-basis: 700px;
+ flex-wrap: wrap;
 }
 
 .container04 li {
@@ -254,6 +272,7 @@ footer p {
   box-shadow: 1px 1px 10px rgba(0, 0, 0, .425);
   margin: 15px;
   width: 80%;
+  max-width: 800px;
 }
 
 .container07 .card-body {
@@ -300,12 +319,8 @@ h3 {
 }
 
 @media (min-width: 768px) {
-  .container03 > #testimony {
-    justify-items: center;
-    align-items: center;
+  .container03 h1 {
     text-align: left;
-    display: grid;
-    grid-template-columns: 35% 65%;
   }
 
   nav p {
@@ -348,6 +363,16 @@ h3 {
   }
 }
 
+@media (min-width: 890px) {
+  .container03 > .testimony {
+    justify-items: center;
+    align-items: center;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 35% 65%;
+  }
+}
+
 @media (min-width: 1024px) {
   nav p {
     font-size: 40px;
@@ -387,6 +412,11 @@ h3 {
     text-align: left;
     display: grid;
     grid-template-columns: 50% 50%;
+  }
+
+  .container03 img {
+    float: left;
+    margin: 10px;
   }
 
   #textAdress > h1 {
